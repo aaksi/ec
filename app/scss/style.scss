@@ -147,5 +147,33 @@
             transform: translateY(-50%);
         }
     }
+    &__nav{
+        background-color: $green;
+        
+    }
+    &__menu-list{
+        display: flex;
+        align-items: center;
+        height: 55px;
+        
+        li{
+            color: #fff;
+            font-size: 15px;
+            line-height: 18px;
+            text-transform: uppercase;
+            position: relative;
+            margin: 0 54px;
+            &:not(:last-child)::before{
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 15px;
+                background-color: #fff;
+                right: -54px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
 }
 // end header 
