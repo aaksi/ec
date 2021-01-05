@@ -1,4 +1,4 @@
-htmhtml{
+html{
     box-sizing: border-box;
 }
 *,
@@ -24,4 +24,19 @@ h4,
 h5,
 h6{
     margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto Slab', serif;
+    // font-family: 'Inter', sans-serif;
+    color: $text;
+    overflow-x: hidden;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+}
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
 }

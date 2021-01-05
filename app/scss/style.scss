@@ -1,1 +1,151 @@
-@import "global"
+@import "vars";
+@import "global";
+
+
+
+
+// start header 
+.header{
+    &__top-inner{
+        display: flex;
+        align-items: center;
+        height: 116px ;
+        // justify-content: space-between;
+    }
+    .logo{
+        margin-right: 32px;
+    }
+    &__top-title{
+        width: 176px;
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        margin-right: 43px;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 41px;
+            background-color: #E3E3E3;
+            right: -43px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .social{
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .social__list {
+        padding: 0 36px;
+        position: relative;
+        li:not(:last-child){
+            margin-right: 12px;
+        } 
+        &::before{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 41px;
+            background-color: #E3E3E3;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .social__link-instagram{
+        background-image: url("../images/icons/social/instagram.svg");
+        width: 24px;
+        height: 24px;
+    }
+    .social__link-facebook{
+        background-image: url("../images/icons/social/facebook.svg");
+        width: 24px;
+        height: 24px;
+    }
+    .social__link-pinterest{
+        background-image: url("../images/icons/social/pinterest.svg");
+        width: 24px;
+        height: 24px;
+    }
+    .social__link-twitter{
+        background-image: url("../images/icons/social/twitter.svg");
+        width: 24px;
+        height: 24px;
+    }
+    &__top-phone{
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 700;
+        padding-left: 40px;
+        position: relative;
+        margin: 0 28px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/phone.svg');
+            width: 20px;
+            height: 20px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 41px;
+            background-color: #E3E3E3;
+            right: -28px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__top-box{
+        margin-left: 36px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 600;
+    }
+    &__top-registred{
+        padding-left: 23px;
+        position: relative;
+        margin-right: 20px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/lock.svg');
+            width: 13px;
+            height: 16px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 26px;
+            background-color: $text;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -20px;
+        }
+    }
+    &__top-login{
+        margin-left: 20px;
+        padding-left: 26px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/key.svg');
+            width: 16px;
+            height: 16px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+// end header 
