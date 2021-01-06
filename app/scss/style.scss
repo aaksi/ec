@@ -427,3 +427,117 @@
     
 } 
 // end lesson 
+
+// start methods 
+.methods{
+    margin-bottom: 20px;
+    &__title{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__subtitle{
+        text-align: center;
+        max-width: 923px;
+        margin: 0 auto;
+        margin-bottom: 57px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item{
+        width: 352px;
+        display: flex;
+        margin-bottom: 57px;
+    }
+    &__item-img{
+        width: 52px;
+        height: 52px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 33px;
+    }
+    &__item-title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+// end methods 
+
+// start mailing 
+.mailing{
+    margin-bottom: 70px;
+    background-image: url('../images/mailing-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 244px;
+    color: #fff;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 59px;
+    }
+    
+    &__title{
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 42px;
+        font-family: 'Roboto Slab', serif;
+        max-width: 427px;
+    }
+    &__descr{
+        font-size: 16px;
+        line-height: 19px;
+        max-width: 479px;
+    }
+    &__form{
+        max-width: 628px;
+        width: 100%;
+        form{
+            position: relative;
+        }
+        input{
+            
+            width: 100%;
+            display: block;
+            background-color: inherit;
+            border: 1px solid #FFFFFF;
+            color: #fff;
+            font-size: 15px;
+            line-height: 18px;
+            border-radius: 0px 22px;
+            padding-left: 29px;
+            padding-right: 194px;
+            height: 61px;
+            &::placeholder{
+                color: #fff;
+                font-size: 15px;
+                line-height: 18px;  
+            }
+        }
+        button{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            padding: 21px 24px 17px 35px;
+            width: 175px;
+            text-align: center;
+            border: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    &__form-title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+}
+// end mailing 
