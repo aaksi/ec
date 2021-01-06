@@ -229,3 +229,32 @@
     }
 } 
 // end top 
+
+// start advantages
+.advantages{
+    margin-bottom: 103px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 67px;
+    }
+    &__item{
+        width: 260px;
+        text-align: center;
+        
+    }
+    &__item-img{
+        img{
+
+            max-width: 100%;
+        }
+        margin-bottom: 28px;
+        height: 85px;
+    }
+    &__item-title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
+// end advantages 
