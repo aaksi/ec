@@ -31,14 +31,8 @@
             transform: translateY(-50%);
         }
     }
-    .social{
-        display: flex;
-        justify-content: space-between;
-        align-items: center; 
-    }
     .social__list {
-        padding: 0 36px;
-        position: relative;
+        padding: 0 34px;
         li:not(:last-child){
             margin-right: 12px;
         } 
@@ -176,6 +170,12 @@
         }
     }
 }
+.social{
+    position: relative;
+    li{
+        display: inline-block;
+    }
+}
 // end header 
 
 // start top
@@ -186,6 +186,11 @@
     min-height: 554px;
     &__inner{
         text-align: center;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        padding: 100px 0;
+    }
+    &__content{
         max-width: 560px;
     }
     &__title{
@@ -193,7 +198,7 @@
         line-height: 59px;
         text-transform: uppercase;
         color: #fff; 
-        padding-top: 100px;
+        
         font-weight: 400;
         &--small{
             font-weight: 300;
@@ -541,3 +546,207 @@
     }
 }
 // end mailing 
+
+// start teachers
+.teachers{
+    text-align: center;
+    margin-bottom: 88px;
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__subtitle{
+        margin-bottom: 52px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 56px;
+    }
+    &__card{
+        width: 230px;
+    }
+    &__images{
+        filter: drop-shadow (0px 4px 8px rgba( 0, 0, 0, 0.4));
+        border-radius: 0px 22px;
+        width: 167px;
+        height: 170px;
+        margin-bottom: 19px;
+    }
+    &__name{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 9px;
+    }
+    &__post{
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    &__description{
+        padding: 0 10px;
+    }
+    &__btn{
+        padding: 19px 39px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
+// end teachers
+
+// start contact
+.contact{
+    &__map{
+        iframe{
+            height: 370px;
+            width: 100%;
+        }
+    }
+    &__content{
+        background-color: #01BA57;
+        min-height: 208px;
+        color: #fff;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+        padding-top: 30px;
+        margin-bottom: 37px;
+        text-align: center;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__item{
+        position: relative;
+        padding-left: 85px;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            background-color: #fff;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__adress{
+        width: 304px;
+        font-size: 16px;
+        line-height: 19px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/marker.svg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 32px;
+        }
+    }
+    &__phone{
+        font-size: 26px;
+        line-height: 30px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/phone-contcts.svg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 32px;
+        }
+    }
+    &__email{
+        font-size: 16px;
+        line-height: 19px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/email.svg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 32px;
+        }
+    }
+}
+// end contact
+
+// start footer 
+.footer{
+    margin-top: 60px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 78px;
+    }
+    &__item{
+        width: 210px;
+    }
+    &__item-title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 26px;
+    }
+    &__list{
+        li{
+            padding-left: 10px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                background-color: $pink;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:not(:last-child){
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .social__list{
+        li:not(:last-child){
+           margin-right: 17px; 
+        }
+    }
+    .social__link-instagram{
+        background-image: url("../images/icons/social/instagram.svg");
+        width: 33px;
+        height: 33px;
+        background-size: cover;
+    }
+    .social__link-facebook{
+        background-image: url("../images/icons/social/facebook.svg");
+        width: 33px;
+        height: 33px;
+        background-size: cover;
+    }
+    .social__link-pinterest{
+        background-image: url("../images/icons/social/pinterest.svg");
+        width: 33px;
+        height: 33px;
+        background-size: cover;
+    }
+    .social__link-twitter{
+        background-image: url("../images/icons/social/twitter.svg");
+        width: 33px;
+        height: 33px;
+        background-size: cover;
+    }
+}
+.footer__copy{
+    text-align: center;
+    margin-bottom: 30px;
+}
+// end footer 
