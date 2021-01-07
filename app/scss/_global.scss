@@ -54,3 +54,12 @@ body{
     line-height: 42px;
     font-family: 'Roboto Slab', serif;
 }
+.page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .footer{
+        margin-top: auto;
+    }
+}
