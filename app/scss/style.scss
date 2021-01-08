@@ -680,7 +680,7 @@
 
 // start footer 
 .footer{
-    margin-top: 60px;
+    padding-top: 60px;
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -784,3 +784,99 @@
     }
 }
 // end breadcrumbs
+
+
+// start all-course
+.all-course{
+    text-align: center;
+    &__title{
+        padding: 38px 0;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__card{
+        width: 387px;
+        min-height: 580px;
+        background-color: #FBFBFB;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        border: 1px solid #F2F0F0;
+        margin-bottom: 21px;
+    }
+    &__card-title{
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 30px;
+        padding-top: 50px;
+        margin-bottom: 23px;
+    }
+    &__card-time{
+        margin-bottom: 55px;
+    }
+    &__card-icon{
+        font-size: 15px;
+        line-height: 18px;
+        display: inline-block;
+        padding-left: 30px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+    }
+    &__card-lesson{
+        margin-right: 30px;
+        &::before{
+            background-image: url('../images/icons/book.svg');
+            width: 20px;
+            height: 16px;
+        }
+    }
+    &__card-date{
+        &::before{
+            background-image: url('../images/icons/date.svg');
+            width: 18px;
+            height: 18px;
+        }
+    }
+    &__card-image{
+        max-width: 312px;
+        margin: 0 auto;
+        margin-bottom: 47px;
+    }
+    &__card-price{
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 30px;
+        color: #0A509F;
+        margin-bottom: 34px;
+        span{
+            text-decoration: line-through;
+            font-size: 18px;
+            line-height: 21px;              
+            color: #B5B5B5;
+            margin-left: 16px;
+        }
+    }
+    &__card-btn{
+        padding: 19px 42px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 18px;
+    }
+    &__rating{
+        padding-top: 11px;
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
+// end all-course
