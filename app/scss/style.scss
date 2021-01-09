@@ -880,3 +880,187 @@
     }
 }
 // end all-course
+
+// start group-course
+.group-course{
+    margin-bottom: 43px;
+    &__inner{
+        background-color: #1861B2;
+        border: 1px solid #F2F0F0;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        background-position: right 24px;
+        background-repeat: no-repeat;
+        color: #fff;
+        min-height: 408px;
+    }
+    &__content{
+        padding-top: 46px;
+        max-width: 526px;
+        padding-left: 56px;
+    }
+    &__title{
+        font-weight: 700;
+        font-family: 'Roboto Slab', serif;
+        font-size: 34px;
+        line-height: 45px;
+        margin-bottom: 24px;
+    }
+    &__info{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    &__lesson{
+        padding-right: 21px;
+        margin-right: 20px;
+        font-size: 16px;
+        line-height: 19px;
+        &::before{
+            background-image: url('../images/icons/book.svg');
+            width: 20px;
+            height: 16px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 23px;
+            background-color: rgba( 0, 0, 0, 0.2);
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__date{
+        padding-right: 21px;
+        margin-right: 20px;
+        font-size: 16px;
+        line-height: 19px;
+        &::before{
+            background-image: url('../images/icons/date.svg');
+            width: 18px;
+            height: 18px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 23px;
+            background-color: rgba( 0, 0, 0, 0.2);
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__rating{
+        display: flex;
+        .rate-star{
+            display: inline-block;
+            margin-right: 13px;
+        }
+        span{
+            display: inline-block;
+        }
+        
+    }
+    &__descr{
+        max-width: 405px;
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 23px;
+    }
+    &__card-price{
+        display: flex;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 45px;
+        span{
+            margin-left: 15px;
+            font-size: 18px;
+            line-height: 21px;
+            text-decoration-line: line-through;
+        }
+    }
+}
+// end group-course
+
+// start reviews
+.reviews{
+    &__title{
+        margin-bottom: 35px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__card{
+        background-color: #FBFBFB;
+        border: 1px solid #F3F3F3;
+        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 33px 33px 0px 33px;
+        width: 381px;
+        height: 344px;
+        margin-bottom: 24px;
+    }
+    &__card-inner{
+        padding: 41px 20px 0 34px;
+    }
+    &__author{
+        display: flex;
+        align-items: center;
+        margin-bottom: 23px;
+    }
+    &__author-avatar{
+       width: 73px;
+       height: 73px;
+       border-radius: 50%;
+       background-position: center center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       margin-right: 15px;
+       display: inline-block;
+    }
+    &__author-name{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 18px;
+    }
+    &__author-date{
+        padding-left: 28px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            background-image: url('../images/icons/calendar.svg');
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+    }
+    &__rating{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 27px;
+    }
+    &__link{
+        color: #8B8B8B;
+        padding-right: 28px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 21px;
+            height: 21px;
+            background-image: url('../images/icons/right-arrow-circle.svg');
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+    }
+}
+// end reviews
