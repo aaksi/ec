@@ -1064,3 +1064,55 @@
     }
 }
 // end reviews
+
+// start info
+.info{
+    margin-bottom: 58px;
+    &__title{
+        padding-top: 34px;
+    }
+    &__subtitle{
+        margin-bottom: 45px;
+    }
+    &__inner{
+        background-position: right bottom;
+        background-repeat: no-repeat;
+    }
+    &__list{
+        max-width: 700px;
+        counter-reset: number;
+    }
+    &__item{
+        margin-bottom: 26px;
+        padding-left: 40px;
+        position: relative;
+        &::before{
+            content: '' counter(number);
+            position: absolute;
+            counter-increment: number;
+            font-weight: 500;
+            left: 8px;
+            top: 7px;
+            transform: translateY(-50%);
+            color: #fff;
+            z-index: 100;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            background-color: $pink;
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            top: -5px;
+            left: 0;
+
+        }
+    }
+}
+.course__descr{
+    text-align: left;
+    padding-top: 36px;
+    margin-bottom: 100px;
+}
+// end info
