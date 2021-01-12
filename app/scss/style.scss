@@ -47,25 +47,29 @@
             transform: translateY(-50%);
         }
     }
-    .social__link-instagram{
-        background-image: url("../images/icons/social/instagram.svg");
+    .social__link-icon{
         width: 24px;
         height: 24px;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(.9);
+           transition: all 0.3s;
+        }
+    }
+
+    .social__link-instagram{
+        background-image: url("../images/icons/social/instagram.svg");    
     }
     .social__link-facebook{
-        background-image: url("../images/icons/social/facebook.svg");
-        width: 24px;
-        height: 24px;
+        background-image: url("../images/icons/social/facebook.svg");   
     }
     .social__link-pinterest{
         background-image: url("../images/icons/social/pinterest.svg");
-        width: 24px;
-        height: 24px;
+        
     }
     .social__link-twitter{
         background-image: url("../images/icons/social/twitter.svg");
-        width: 24px;
-        height: 24px;
+        
     }
     &__top-phone{
         font-size: 22px;
@@ -74,6 +78,15 @@
         padding-left: 40px;
         position: relative;
         margin: 0 28px;
+        &:hover{
+            color: #000;
+            transition: all 0.3s;
+            &::before{
+                transform: translateY(-50%) scale(1.1) ;
+                transition: all 0.3s;
+            }
+    
+        }
         &::before{
             content: '';
             position: absolute;
@@ -83,6 +96,7 @@
             left: 0;
             top: 50%;
             transform: translateY(-50%);
+            transition: all 0.3s;
         }
         &::after{
             content: "";
@@ -100,11 +114,13 @@
         font-size: 16px;
         line-height: 19px;
         font-weight: 600;
+        
     }
     &__top-registred{
         padding-left: 23px;
         position: relative;
         margin-right: 20px;
+        
         &::before{
             content: '';
             position: absolute;
@@ -114,6 +130,15 @@
             left: 0;
             top: 50%;
             transform: translateY(-50%);
+            transition: all 0.3s;
+        }
+        &:hover{
+            color: #000;
+            &::before{
+                
+                transform: translateY(-50%) scale(1.1) ;
+                transition: all 0.3s;
+            }
         }
         &::after{
             content: '';
@@ -136,9 +161,17 @@
             background-image: url('../images/icons/key.svg');
             width: 16px;
             height: 16px;
-            left: 0;
+            left: 1px;
             top: 50%;
             transform: translateY(-50%);
+            transition: all 0.3s;
+        }
+        &:hover{
+            color: #000;
+            &::before{
+                transform: translateY(-50%) scale(1.1) ;
+                transition: all 0.3s;
+            }
         }
     }
     &__nav{
@@ -149,7 +182,6 @@
         display: flex;
         align-items: center;
         height: 55px;
-        
         li{
             color: #fff;
             font-size: 15px;
@@ -157,6 +189,22 @@
             text-transform: uppercase;
             position: relative;
             margin: 0 54px;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 110%;
+                background-color: #fff;
+                height: 2px;
+                bottom: -3px;
+                left: -5%;
+                opacity: 0;
+                transition: all 0.3s;
+            }
+            &:hover{
+                &::after{
+                    opacity: 1;
+                }
+            }
             &:not(:last-child)::before{
                 content: '';
                 position: absolute;
@@ -536,6 +584,7 @@
             position: absolute;
             right: 0;
             top: 0;
+            cursor: pointer;
         }
     }
     &__form-title{
@@ -626,6 +675,7 @@
     &__item{
         position: relative;
         padding-left: 85px;
+        
         &::before{
             content: '';
             position: absolute;
@@ -636,6 +686,13 @@
             background-color: #fff;
             top: 50%;
             transform: translateY(-50%);
+            transition: all 0.3s;
+        }
+        &:hover{
+            &::before{
+                transition: all 0.3s;
+                transform: translateY(-50%) scale(1.1);
+            }
         }
     }
     &__adress{
@@ -699,6 +756,7 @@
         li{
             padding-left: 10px;
             position: relative;
+            transition: all 0.3s;
             &::before{
                 content: '';
                 position: absolute;
@@ -709,40 +767,51 @@
                 left: 0;
                 top: 50%;
                 transform: translateY(-50%);
+                transition: all 0.3s;
             }
             &:not(:last-child){
                 margin-bottom: 25px;
             }
+            &:hover{
+                transition: all 0.3s;
+                color: #000;
+                font-weight: 500;
+
+                &::before{
+                    transform: translateY(-50%) scale(2) ;
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+    .social__link-icon{
+        width: 33px;
+        height: 33px;
+        background-size: cover;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(.9);
+           transition: all 0.3s;
         }
     }
     .social__list{
+        
         li:not(:last-child){
            margin-right: 17px; 
         }
     }
     .social__link-instagram{
         background-image: url("../images/icons/social/instagram.svg");
-        width: 33px;
-        height: 33px;
-        background-size: cover;
+
     }
     .social__link-facebook{
         background-image: url("../images/icons/social/facebook.svg");
-        width: 33px;
-        height: 33px;
-        background-size: cover;
     }
     .social__link-pinterest{
         background-image: url("../images/icons/social/pinterest.svg");
-        width: 33px;
-        height: 33px;
-        background-size: cover;
     }
     .social__link-twitter{
         background-image: url("../images/icons/social/twitter.svg");
-        width: 33px;
-        height: 33px;
-        background-size: cover;
     }
 }
 .footer__copy{
@@ -1051,6 +1120,7 @@
         color: #8B8B8B;
         padding-right: 28px;
         position: relative;
+        transition: all 0.3s;
         &::before{
             content: '';
             position: absolute;
@@ -1060,6 +1130,15 @@
             top: 50%;
             transform: translateY(-50%);
             right: 0;
+            transition: all 0.3s;
+        }
+        &:hover{
+            
+            color: #000;
+            &::before{
+                transform: translateY(-50%) scale(1.1) ;
+                transition: all 0.3s;
+            }
         }
     }
 }
