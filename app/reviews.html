@@ -17,10 +17,14 @@
             <div class="header__top">
                 <div class="container">
                     <div class="header__top-inner">
-                        <div class="logo">
-                            <a href="index.html"><img src="images/logo.svg" alt="EffectKey-logo"></a>
-                        </div>
+                            <a href="index.html">
+                                <picture>
+                                    <source srcset="images/logo-mob.svg" media="(max-width:860px)">
+                                    <img src="images/logo.svg" alt="">
+                                </picture>
+                            </a>
                         <div class="header__top-slogan">Cамая эффективная школа английского языка</div>
+                        <span></span>
                         <div class="header__top-social">
                             <ul class="social__list social">
                                 <li class="social__link"><a href="#" class="social__link-icon social__link-instagram"></a></li>
@@ -29,24 +33,47 @@
                                 <li class="social__link"><a href="#" class="social__link-icon social__link-twitter"></a></li>
                             </ul>
                         </div>
+                        <span></span>
                         <a href="tel:71234567890" class="header__top-phone">+7 123 456 7890</a>
+                        <span></span>
                         <div class="header__top-box">
                             <a href="#" class="header__top-registred">Регистрация</a>
+                            <span></span>
                             <a href="#" class="header__top-login">Войти</a>
+                        </div>
+                        <div class="burger__btn">
+                            <span class="burger__btn-line"></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="header__nav">
+            <div class="header__nav ">
                 <div class="container">
                     <nav class="header__menu">
+                        <div class="header__top-box">
+                            <a href="#" class="header__top-registred">Регистрация</a>
+                            <span></span>
+                            <a href="#" class="header__top-login">Войти</a>
+                        </div>
                         <ul class="header__menu-list">
                             <li class="header__list-item"><a href="index.html">ГЛАВНАЯ</a></li>
+                            <li><span></span></li>
                             <li class="header__list-item"><a href="course.html">КУРСЫ</a></li>
+                            <li><span></span></li>
                             <li class="header__list-item"><a href="info.html">О НАС</a></li>
+                             <li><span></span></li>
                             <li class="header__list-item"><a href="#">ПРЕПОДАВАТЕЛИ</a></li>
+                             <li><span></span></li>
                             <li class="header__list-item"><a href="#">ОПЛАТИТЬ ОНЛАЙН</a></li>
-                            <li class="header__list-item"><a href="#">КОНТАКТЫ</a></li>
+                             <li><span></span></li>
+                            <li class="header__list-item"><a href="contacts.html">КОНТАКТЫ</a></li>
+                        </ul>
+                        <div class="social__list-title">Мы в соцсетях</div>
+                        <ul class="social__list social">
+                            <li class="social__link"><a href="#" class="social__link-icon social__link-instagram"></a></li>
+                            <li class="social__link"><a href="#" class="social__link-icon social__link-facebook"></a></li>
+                            <li class="social__link"><a href="#" class="social__link-icon social__link-pinterest"></a></li>
+                            <li class="social__link"><a href="#" class="social__link-icon social__link-twitter"></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -67,7 +94,7 @@
         
         <section class="group-course">
             <div class="container">
-                <div class="group-course__inner" style="background-image: url('images/group-course.svg');" >
+                <div class="group-course__inner" >
                         <div class="group-course__content">
                             <div class="group-course__title">Групповые курсы</div>
                             <div class="group-course__info ">
@@ -78,6 +105,7 @@
                             <p class="group-course__descr">100% наших учителей имеют Сертификаты и высшее  образование, связанное с преподаванием и английским  языком. Ни один преподаватель не говорит на русском только 100% погружение в языковую среду. Они живут  во всех уголках земного шара и рады поделиться  с вами своим опытом!</p>
                             <div class="group-course__card-price">9 690 ₽ <span>12 690 ₽</span></div>
                         </div>
+                        <div class="group-course__img"><img src="images/group-course.svg" alt=""></div>
                 </div>
             </div>
         </section>

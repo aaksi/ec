@@ -1,3 +1,8 @@
+@media(max-width:1450px){
+    .contact__form--page-contacts{
+        right: 0;
+    }
+}
 @media(max-width:1250px){
     .top__inner{
         display: block;
@@ -26,11 +31,46 @@
     .mailing__descr{
         margin-bottom: 30px;
     }
+    .group-course__inner{
+        align-items: flex-end;
+    }
+    .group-course__info{
+        display: block;
+    }
+    .all-course__card-icon{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .group-course__lesson::after,
+    .group-course__date::after{
+        display: none;
+    }
+    .group-course__info{
+        margin-bottom: 25px;
+    }
+    .group-course__card-price{
+        margin-bottom: 20px;
+    }
+    .group-course__content{
+        padding-left: 20px;
+        margin-right: 15px;
+    }
+    .contact__form--page-contacts{
+        display: block;
+        position: static;
+        top: 0;
+        max-width: 100%;
+        border-radius: 0px;
+    }
 }
 @media(max-width:1080px){
     .lesson::before{
         display: none;
     }
+    .all-course__card{
+        flex-basis: calc(50% - 20px);
+    }
+    
 }
 @media(max-width:1020px){
     .teachers__card {
@@ -61,6 +101,15 @@
             display: block;
             max-width: 100%;
         }
+    }
+    .reviews__card{
+        flex-basis: calc(50% - 23px);
+    }
+    .info__inner{
+        display: block;
+    }
+    .info__list{
+        width: 100%;
     }
 }
 @media(max-width:920px){
@@ -108,6 +157,9 @@
     .methods__item{
         flex-basis: calc(50% - 30px);
     }
+    .group-course__content{
+        padding-top: 20px;
+    }
 }
 @media(max-width:860px){
     .header{
@@ -118,7 +170,7 @@
     }
     .burger__btn{
         display: block;
-        z-index: 1;
+        z-index: 2;
         transition: all 2s;
         .burger__btn-line{
             opacity: 1;
@@ -137,7 +189,7 @@
     .burger__btn.burger__btn--active{
         position: absolute;
         right: 15px;
-        z-index: 2;
+        z-index: 3;
         .burger__btn-line{
             opacity: 0;
             transition: all 0.2s;
@@ -204,7 +256,7 @@
         min-height: 100%;
         transform: translateY(0%);
         transition: all  0.5s ;
-        z-index: 1;
+        z-index: 2;
     }
     .header__top-phone{
         transition: all 0.5s;
@@ -239,10 +291,26 @@
         max-width: 100%;
         padding-bottom: 50px;
     }
+    .group-course__inner{
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    .group-course{
+        background-color: #1861B2;
+    }
+    .group-course__info{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 @media(max-width:800px){
     .teachers__inner{
-        margin-left: -50px;
+        margin-left: -100px;
+    }
+    .all-course__card{
+        flex-basis: 100%;
+        margin-right: 50px;
     }
 }
 @media(max-width:680px){
@@ -302,6 +370,15 @@
             left: 0;
         }
     }
+    .group-course__content{
+        padding-left: 0;
+    }
+    .group-course__card-price{
+        margin-bottom: 40px;
+    }
+    .reviews__card{
+        flex-basis: 100%;
+    }
 }
 @media(max-width:600px){
 
@@ -326,6 +403,9 @@
     .curse__card{
         width: 100%;
     }  
+    .contact__form--page-contacts{
+        padding: 0 15px;
+    }
 }
 @media(max-width:520px){
     .top__title{
@@ -427,5 +507,9 @@
             font-size: 40px;
             line-height: 48px;
         }
+    }
+    .reviews__author-name {
+        font-size: 16px;
+        line-height: 19px;
     }
 }
