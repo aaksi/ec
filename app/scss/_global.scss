@@ -27,6 +27,11 @@ h6{
     margin: 0;
     padding: 0;
 }
+html,
+body{
+    position: relative;
+    overflow-x: hidden;
+}
 body{
     font-family: 'Roboto', sans-serif;
     // font-family: 'Roboto Slab', serif;
