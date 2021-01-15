@@ -37,9 +37,12 @@
     .group-course__info{
         display: block;
     }
-    .all-course__card-icon{
-        display: block;
-        margin-bottom: 20px;
+    .group-course{
+
+        .all-course__card-icon{
+            display: block;
+            margin-bottom: 20px;
+        }
     }
     .group-course__lesson::after,
     .group-course__date::after{
@@ -170,7 +173,7 @@
     }
     .burger__btn{
         display: block;
-        z-index: 2;
+        z-index: 3;
         transition: all 2s;
         .burger__btn-line{
             opacity: 1;
@@ -196,22 +199,17 @@
         }
         &::after{
             opacity: 1;
-            transform: translateY(-7px) rotate(-135deg);
+            transform: translateY(6px) rotate(-135deg);
             transition: all 0.4s;
             width: 23px;
         }
         &::before{
             transition: all 0.4s;
-            transform: translateY(6px) rotate(135deg);
+            transform: translateY(-7px) rotate(135deg);
             width: 23px;
         }
     }
-    .header__nav{
-        display: none;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
+   
     .header__menu{
 
         .social__list{
@@ -237,11 +235,13 @@
             display: block;
         }
     }
-    
     .header__nav{
         transform: translateY(-300%);
         transition: all  1s ;
         display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
         // &.header__nav--active{
         //     display: block;
         //     padding: 25px;

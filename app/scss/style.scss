@@ -264,8 +264,9 @@
     &__images{
         max-width: 642px;
         margin: 0 auto;
-        img{
-
+        display: flex;
+        margin-top: 3px;
+        img{    
             width: 100%;
         }
     }
@@ -373,6 +374,7 @@
    }
    &__image{
        max-width: 500px;
+       display: flex;
        img{
            width: 100%;
        }
@@ -485,6 +487,7 @@
             line-height: 18px;
             padding: 0 26px;
             height: 55px;
+            outline: none;
             &::placeholder{
                 color: #fff;
                 font-size: 15px;
@@ -493,6 +496,7 @@
             &:not(:first-child){
                 margin-top: 13px;
             }
+
         }
         button{
             border: none;
@@ -998,7 +1002,7 @@
     &__rating{
         padding-top: 11px;
         display: inline-block;
-        margin: 0 auto;
+        margin: 0 auto 10px;
     }
 }
 // end all-course
@@ -1106,8 +1110,9 @@
         }
     }
     &__img{
-        margin-top: 19px;
+        margin-top: 22px;
         max-width: 589px;
+        display: flex;
         img{
             width: 100%;
         }
@@ -1347,8 +1352,6 @@
     .burger__btn-line{
         margin-top: 17px;
         margin-left: 10px;
-        // position: absolute;
-        // left: 10px;
         width: 15px;
         height: 2px;
         display: block;
@@ -1367,11 +1370,12 @@
           border-radius: 3px;
         }
         &::after{
-          bottom: 11px;
+            top: 11px;
+          
           width: 23px;
         }
         &::before{
-          top: 11px;
+            bottom: 11px;
           width: 20px;
         }
 }
