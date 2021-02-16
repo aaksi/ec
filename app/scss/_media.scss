@@ -230,6 +230,9 @@
             li{
                 margin-bottom: 40px;
             }
+            a{
+                display: block;
+            }
         }
         .social__list-title{
             display: block;
@@ -242,6 +245,7 @@
         position: absolute;
         top: 0;
         width: 100%;
+        z-index: 2;
         // &.header__nav--active{
         //     display: block;
         //     padding: 25px;
@@ -311,6 +315,14 @@
     .all-course__card{
         flex-basis: 100%;
         margin-right: 50px;
+    }
+    .contact__map--page-contacts{
+        iframe{
+            display: block;
+        }
+    }
+    .contact__map{
+        display: block; 
     }
 }
 @media(max-width:680px){
